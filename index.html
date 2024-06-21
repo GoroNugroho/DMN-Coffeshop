@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Menu Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DMN Coffeeshop</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#snacks">Snacks</a></li>
+            <li><a href="#main-dishes">Main Dishes</a></li>
+            <li><a href="#coffees">Coffees</a></li>
+            <li><a href="#non-coffees">Non-Coffee Drinks</a></li>
+            <li><a href="#teas">Teas</a></li>
+            <li><a href="#milk-base">Milk-Based Drinks</a></li>
+            <li><a href="cart.html">Cart</a></li> 
+        </ul>
+    </nav>
+    <main>
+        <section id="snacks">
+            <h2>Snacks</h2>
+            <p>Enjoy our delicious snacks.</p>
+            <ul class="menu-list">
+                <!--Snacks-->
+                <li>
+                    <img src="images/bruschetta.jpg" alt="Bruschetta">
+                    <div>
+                        <div>Bruschetta - Rp 25.000</div>
+                        <button onclick="addToCart('Bruschetta', 25000)">Add to Cart</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/french_fries.jpg" alt="French Fries">
+                    <div>
+                        <div>French Fries - Rp 20.000</div>
+                        <button onclick="addToCart('French Fries', 20000)">Add to Cart</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/nachos.jpg" alt="Nachos">
+                    <div>
+                        <div>Nachos - Rp 35.000</div>
+                        <button onclick="addToCart('Nachos', 35000)">Add to Cart</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/spring_rolls.jpg" alt="Spring Rolls">
+                    <div>
+                        <div>Spring Rolls - Rp 25.000</div>
+                        <button onclick="addToCart('Spring Rolls', 25000)">Add to Cart</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/onion_rings.jpg" alt="Onion Rings">
+                    <div>
+                        <div>Onion Rings - Rp 22.000</div>
+                        <button onclick="addToCart('Onion Rings', 22000)">Add to Cart</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="main-dishes">
+            <h2>Main Dishes</h2>
+            <p>Our main dishes are sure to satisfy your appetite.</p>
+            <ul class="menu-list">
+                <!-- Main dish -->
+                <li>
+                    <img src="images/grilled_chicken.jpg" alt="Grilled Chicken">
+                    <div>
+                        <div>Grilled Chicken - Rp 120.000</div>
+                        <button onclick="addToCart('Grilled Chicken', 120000)">Add to Cart</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/steak.jpg" alt="Steak">
+                    <div>
+                        <div>Steak - Rp 150.000</div>
+                        <button onclick="addToCart('Steak', 150000)">Add to Cart</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/salmon_fillet.jpg" alt="Salmon Fillet">
+                    <div>
+                        <div>Salmon Fillet - Rp 180.000</div>
+                        <button onclick="addToCart('Salmon Fillet', 180000)">Add to Cart</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/spaghetti_carbonara.jpg" alt="Spaghetti Carbonara">
+                    <div>
+                        <div>Spaghetti Carbonara - Rp 90.000</div>
+                        <button onclick="addToCart('Spaghetti Carbonara', 90000)">Add to Cart</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/pizza.jpg" alt="Pizza">
+                    <div>
+                        <div>Pizza - Rp 110.000</div>
+                        <button onclick="addToCart('Pizza', 110000)">Add to Cart</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="coffees">
+            <h2>Coffees</h2>
+            <p>Enjoy our variety of coffee drinks.</p>
+            <ul class="menu-list">
+                <!-- Coffee -->
+                <li>
+                    <img src="images/coffee.jpg" alt="Coffee">
+                    <div>
+                        <div>Coffee - Rp 20.000</div>
+                        <button onclick="addToCart('Coffee', 20000)">Add to Cart</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/espresso.jpg" alt="Espresso">
+                    <div>
+                        <div>Espresso - Rp 18.000</div>
+                        <button onclick="addToCart('Espresso', 18000)">Add to Cart</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/cappuccino.jpg" alt="Cappuccino">
+                    <div>
+                        <div>Cappuccino - Rp 25.000</div>
+                        <button onclick="addToCart('Cappuccino', 25000)">Add to Cart</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/latte.jpg" alt="Latte">
+                    <div>
+                        <div>Latte - Rp 22.000</div>
+                        <button onclick="addToCart('Latte', 22000)">Add to Cart</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/mocha.jpg" alt="Mocha">
+                    <div>
+                        <div>Mocha - Rp 25.000</div>
+                        <button onclick="addToCart('Mocha', 25000)">Add to Cart</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="non-coffees">
+            <h2>Non-Coffee Drinks</h2>
+            <p>Quench your thirst with these refreshing drinks.</p>
+            <ul class="menu-list">
+                <!-- Non-coffee drink -->
+                <li>
+                    <img src="images/orange_juice.jpg" alt="Orange Juice">
+                    <div>
+                        <div>Orange Juice - Rp 25.000</div>
+                        <button onclick="addToCart('Orange Juice', 25000)">Add to Cart</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/lemonade.jpg" alt="Lemonade">
+                    <div>
+                        <div>Lemonade - Rp 25.000</div>
+                        <button onclick="addToCart('Lemonade', 25000)">Add to Cart</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/mineral_water.jpg" alt="Mineral Water">
+                    <div>
+                        <div>Mineral Water - Rp 10.000</div>
+                        <button onclick="addToCart('Mineral Water', 10000)">Add to Cart</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="teas">
+            <h2>Teas</h2>
+            <p>Relax with our selection of teas.</p>
+            <ul class="menu-list">
+                <!-- Tea -->
+                <li>
+                    <img src="images/tea.jpg" alt="Tea">
+                    <div>
+                        <div>Tea - Rp 15.000</div>
+                        <button onclick="addToCart('Tea', 15000)">Add to Cart</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/green_tea.jpg" alt="Green Tea">
+                    <div>
+                        <div>Green Tea - Rp 18.000</div>
+                        <button onclick="addToCart('Green Tea', 18000)">Add to Cart</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="milk-base">
+            <h2>Milk-Based Drinks</h2>
+            <p>Indulge in our creamy milk-based drinks.</p>
+            <ul class="menu-list">
+                <!-- Milk-based drink -->
+                <li>
+                    <img src="images/milkshake.jpg" alt="Milkshake">
+                    <div>
+                        <div>Milkshake - Rp 30.000</div>
+                        <button onclick="addToCart('Milkshake', 30000)">Add to Cart</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/matcha_latte.jpg" alt="Matcha Latte">
+                    <div>
+                        <div>Matcha Latte - Rp 35.000</div>
+                        <button onclick="addToCart('Matcha Latte', 35000)">Add to Cart</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <button onclick="goToReceipt()">Checkout</button>
+    </main>
+    <footer>
+        <p>&copy; 2024 | Copy rights @Nugi Nugroho</p>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>
