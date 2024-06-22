@@ -238,6 +238,67 @@ button:active {
     }
 }
 
+/* Feedback Section Styling */
+#feedback {
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+#feedback h2 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: #333;
+    text-align: center;
+}
+
+#feedback form {
+    display: flex;
+    flex-direction: column;
+}
+
+#feedback form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#feedback form input, #feedback form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#feedback form button {
+    align-self: flex-start;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#feedback form button:hover {
+    background-color: #0056b3;
+}
+
+#feedback form button:active {
+    background-color: #004085;
+    transform: scale(0.98);
+}
+
+#feedbackMessage {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+}
+
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }

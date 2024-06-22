@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DMN Coffeeshop - Feedback</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html#snacks">Snacks</a></li>
+            <li><a href="index.html#main-dishes">Main Dishes</a></li>
+            <li><a href="index.html#coffees">Coffees</a></li>
+            <li><a href="index.html#non-coffees">Non-Coffee Drinks</a></li>
+            <li><a href="index.html#teas">Teas</a></li>
+            <li><a href="index.html#milk-base">Milk-Based Drinks</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="feedback">
+            <h2>We Value Your Feedback</h2>
+            <form id="feedbackForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <p id="feedbackMessage"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 | Copy rights @Nugi Nugroho</p>
+    </footer>
+    <script src="feedback.js"></script>
+</body>
+</html>
