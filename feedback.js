@@ -9,13 +9,13 @@ document.getElementById('feedbackForm').addEventListener('submit', function(even
 
     // Validate form
     if (name === '' || email === '' || message === '') {
-        feedbackMessage.textContent = 'All fields are required.';
+        feedbackMessage.textContent = 'Isi semua data yang ada.';
         feedbackMessage.style.color = 'red';
     } else if (!validateEmail(email)) {
-        feedbackMessage.textContent = 'Please enter a valid email address.';
+        feedbackMessage.textContent = 'Masukan email yang valid boss!';
         feedbackMessage.style.color = 'red';
     } else {
-        feedbackMessage.textContent = 'Thank you for your feedback!';
+        feedbackMessage.textContent = 'Terimakasih atas feedbacknya!';
         feedbackMessage.style.color = 'green';
 
         // Clear form
